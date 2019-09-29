@@ -33,6 +33,7 @@ fn run() -> Result<(), ::failure::Error> {
         ).arg(
             Arg::with_name("INCLUDE_PATH")
                 .required(false)
+                .multiple(true)
                 .long("include")
                 .short("I")
                 .takes_value(true)
